@@ -106,21 +106,21 @@ m1 == restaMatriz(suma,m2)
 
 // Comparación entre los algoritmos secuenciales con sus paralelos respectivos.
 for {
-  i <- 1 to 10
+  i <- 1 to 9
   m1 = matrizAlAzar(math.pow(2, i).toInt, 2)
   m2 = matrizAlAzar(math.pow(2, i).toInt, 2)
 } yield (compararAlgoritmos(multMatriz, multMatrizPar)(m1,m2),
   math.pow(2, i).toInt)
 
 for {
-  i <- 1 to 10
+  i <- 1 to 9
   m1 = matrizAlAzar(math.pow(2, i).toInt, 2)
   m2 = matrizAlAzar(math.pow(2, i).toInt, 2)
 } yield (compararAlgoritmos(multMatrizRec,multMatrizRecPar)(m1,m2),
   math.pow(2, i).toInt)
 
 for {
-  i <- 1 to 10
+  i <- 1 to 9
   m1 = matrizAlAzar(math.pow(2, i).toInt, 2)
   m2 = matrizAlAzar(math.pow(2, i).toInt, 2)
 } yield (compararAlgoritmos(multStrassen,multStrassenPar)(m1,m2),
@@ -128,21 +128,21 @@ for {
 
 // Comparación entre los algoritmos secuenciales.
 for {
-  i <- 1 to 10
+  i <- 1 to 9
   m1 = matrizAlAzar(math.pow(2, i).toInt, 2)
   m2 = matrizAlAzar(math.pow(2, i).toInt, 2)
 } yield (compararAlgoritmos(multMatriz,multMatrizRec)(m1,m2),
   math.pow(2, i).toInt)
 
 for {
-  i <- 1 to 10
+  i <- 1 to 9
   m1 = matrizAlAzar(math.pow(2, i).toInt, 2)
   m2 = matrizAlAzar(math.pow(2, i).toInt, 2)
 } yield (compararAlgoritmos(multMatrizRec,multStrassen)(m1,m2),
   math.pow(2, i).toInt)
 
 for {
-  i <- 1 to 10
+  i <- 1 to 9
   m1 = matrizAlAzar(math.pow(2, i).toInt, 2)
   m2 = matrizAlAzar(math.pow(2, i).toInt, 2)
 } yield (compararAlgoritmos(multMatriz,multStrassen)(m1,m2),
@@ -150,21 +150,21 @@ for {
 
 // Comparación entre algoritmos paralelos.
 for {
-  i <- 1 to 10
+  i <- 1 to 9
   m1 = matrizAlAzar(math.pow(2, i).toInt, 2)
   m2 = matrizAlAzar(math.pow(2, i).toInt, 2)
 } yield (compararAlgoritmos(multMatrizPar,multMatrizRecPar)(m1,m2),
   math.pow(2, i).toInt)
 
 for {
-  i <- 1 to 10
+  i <- 1 to 9
   m1 = matrizAlAzar(math.pow(2, i).toInt, 2)
   m2 = matrizAlAzar(math.pow(2, i).toInt, 2)
 } yield (compararAlgoritmos(multMatrizRecPar,multStrassenPar)(m1,m2),
   math.pow(2, i).toInt)
 
 for {
-  i <- 1 to 10
+  i <- 1 to 9
   m1 = matrizAlAzar(math.pow(2, i).toInt, 2)
   m2 = matrizAlAzar(math.pow(2, i).toInt, 2)
 } yield (compararAlgoritmos(multMatrizPar,multStrassenPar)(m1,m2),
